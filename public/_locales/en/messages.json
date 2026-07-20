@@ -1,0 +1,542 @@
+{
+  "appName": {
+    "message": "Inquiso"
+  },
+  "tagline": {
+    "message": "Chat with and act on any web page."
+  },
+  "askPlaceholder": {
+    "message": "Ask about this page…"
+  },
+  "send": {
+    "message": "Send"
+  },
+  "stop": {
+    "message": "Stop"
+  },
+  "thoughts": {
+    "message": "Thoughts"
+  },
+  "thinking": {
+    "message": "Thinking"
+  },
+  "thoughtFor": {
+    "message": "Thought for"
+  },
+  "toolReadPage": {
+    "message": "Read the page"
+  },
+  "toolQuery": {
+    "message": "Looked for"
+  },
+  "toolScroll": {
+    "message": "Scrolled an element into view"
+  },
+  "toolClick": {
+    "message": "Clicked an element"
+  },
+  "toolType": {
+    "message": "Typed"
+  },
+  "newChat": {
+    "message": "New chat"
+  },
+  "history": {
+    "message": "History"
+  },
+  "historyEmpty": {
+    "message": "No conversations yet."
+  },
+  "deleteConversation": {
+    "message": "Delete conversation"
+  },
+  "addContext": {
+    "message": "Add context or attachments"
+  },
+  "closeMenu": {
+    "message": "Close menu"
+  },
+  "shareLabel": {
+    "message": "Share with AI"
+  },
+  "sharingOne": {
+    "message": "Sharing this page"
+  },
+  "sharingMany": {
+    "message": "Sharing"
+  },
+  "pagesWord": {
+    "message": "pages"
+  },
+  "moreWord": {
+    "message": "more"
+  },
+  "noReadable": {
+    "message": "No readable page."
+  },
+  "sharingWith": {
+    "message": "Sharing"
+  },
+  "shareNothing": {
+    "message": "No readable page"
+  },
+  "attachFiles": {
+    "message": "Attach files"
+  },
+  "attachUnsupported": {
+    "message": "Attach files (needs a vision model)"
+  },
+  "scopePage": {
+    "message": "This page"
+  },
+  "scopeGroup": {
+    "message": "Tab group"
+  },
+  "scopeWindow": {
+    "message": "All tabs"
+  },
+  "greetingMorning": {
+    "message": "Good morning."
+  },
+  "greetingAfternoon": {
+    "message": "Good afternoon."
+  },
+  "greetingEvening": {
+    "message": "Good evening."
+  },
+  "emptyPrompt": {
+    "message": "What would you like to know?"
+  },
+  "emptyTagline": {
+    "message": "Ask anything about the page you’re on."
+  },
+  "suggestSummarize": {
+    "message": "Summarize this page"
+  },
+  "suggestTrust": {
+    "message": "Can I trust this site?"
+  },
+  "suggestExplain": {
+    "message": "Explain this in simple terms"
+  },
+  "privacyTitle": {
+    "message": "Private by design."
+  },
+  "privacyNote": {
+    "message": "Inquiso is open source and has no servers. Everything stays local: your questions go straight from your browser to the AI you choose, using your own key. No account, no tracking, no chat reviews — ever."
+  },
+  "allowAction": {
+    "message": "Allow"
+  },
+  "approve": {
+    "message": "Approve"
+  },
+  "reject": {
+    "message": "Reject"
+  },
+  "addKey": {
+    "message": "Add key"
+  },
+  "settingsTitle": {
+    "message": "Inquiso settings"
+  },
+  "settingsIntro": {
+    "message": "Inquiso runs entirely on your device — no Inquiso server. Pick a provider and, for cloud models, paste your own API key (stored encrypted, never synced or shared)."
+  },
+  "activeProvider": {
+    "message": "Active provider"
+  },
+  "modelLabel": {
+    "message": "Model"
+  },
+  "back": {
+    "message": "Back"
+  },
+  "modelIdPlaceholder": {
+    "message": "model id"
+  },
+  "addProvider": {
+    "message": "Add a provider"
+  },
+  "addProviderHint": {
+    "message": "Any OpenAI-compatible endpoint — a gateway, your own server, or a local model (Ollama/LM Studio). Local URLs need no key."
+  },
+  "providerName": {
+    "message": "Name (e.g. Groq)"
+  },
+  "baseUrl": {
+    "message": "Base URL (…/v1)"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "addAndGrant": {
+    "message": "Add & grant access"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "getKey": {
+    "message": "Get a key →"
+  },
+  "keySaved": {
+    "message": "✓ Key saved"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "pasteKey": {
+    "message": "Paste API key"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "clearCache": {
+    "message": "Clear cache"
+  },
+  "reasoningLabel": {
+    "message": "Show model reasoning (for models that support it; uses more tokens)"
+  },
+  "autonomyLabel": {
+    "message": "Default autonomy (high-risk actions always confirm)"
+  },
+  "webSearchLabel": {
+    "message": "Allow web search (sends your query to the provider’s search; supported models only)"
+  },
+  "cacheLabel": {
+    "message": "Cached page content (in memory, local only)"
+  },
+  "attachmentsLabel": {
+    "message": "Stored attachments (kept on-device so past chats show them)"
+  },
+  "clearAttachments": {
+    "message": "Clear"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "tabModels": {
+    "message": "Models"
+  },
+  "tabAgent": {
+    "message": "Agent"
+  },
+  "tabPermissions": {
+    "message": "Access"
+  },
+  "tabMcp": {
+    "message": "MCP"
+  },
+  "permissionsTitle": {
+    "message": "Agent permissions"
+  },
+  "permBookmarks": {
+    "message": "Bookmarks — read & add"
+  },
+  "permHistory": {
+    "message": "Browsing history — search"
+  },
+  "permTabGroups": {
+    "message": "Tab groups — create & edit (Chromium)"
+  },
+  "permSessions": {
+    "message": "Reopen recently closed tabs"
+  },
+  "permAllSites": {
+    "message": "Access all sites (skip the per-site prompt for multi-site tasks — grants broad access; revoke anytime)"
+  },
+  "mcpTitle": {
+    "message": "MCP servers"
+  },
+  "mcpHint": {
+    "message": "Connect Model Context Protocol servers to add tools. Their actions pass through the same confirmation gate; tokens are stored encrypted and never leave your device."
+  },
+  "mcpName": {
+    "message": "Name (e.g. GitHub)"
+  },
+  "mcpUrl": {
+    "message": "Server URL (https://…)"
+  },
+  "mcpToken": {
+    "message": "Bearer token (optional)"
+  },
+  "mic": {
+    "message": "Voice input"
+  },
+  "micStop": {
+    "message": "Stop recording"
+  },
+  "readAloud": {
+    "message": "Read aloud"
+  },
+  "sources": {
+    "message": "Sources"
+  },
+  "copy": {
+    "message": "Copy"
+  },
+  "copied": {
+    "message": "Copied"
+  },
+  "exportChats": {
+    "message": "Export chats"
+  },
+  "importChats": {
+    "message": "Import chats"
+  },
+  "tabSync": {
+    "message": "Backup"
+  },
+  "syncTitle": {
+    "message": "Cloud backup"
+  },
+  "syncHint": {
+    "message": "Back up your chats to your own cloud storage — never an Inquiso server. Credentials are stored encrypted on your device."
+  },
+  "syncMode": {
+    "message": "Backup"
+  },
+  "syncManual": {
+    "message": "Manual"
+  },
+  "syncAuto": {
+    "message": "Automatic"
+  },
+  "webdavUrl": {
+    "message": "File URL (…/inquiso.json)"
+  },
+  "webdavUser": {
+    "message": "Username"
+  },
+  "webdavPass": {
+    "message": "App password"
+  },
+  "connectGrant": {
+    "message": "Connect & grant access"
+  },
+  "disconnect": {
+    "message": "Disconnect"
+  },
+  "backupNow": {
+    "message": "Back up now"
+  },
+  "restore": {
+    "message": "Restore"
+  },
+  "backingUp": {
+    "message": "Backing up…"
+  },
+  "backupDone": {
+    "message": "Backed up."
+  },
+  "backupFailed": {
+    "message": "Backup failed — check the connection."
+  },
+  "restoring": {
+    "message": "Restoring…"
+  },
+  "restoreFailed": {
+    "message": "Restore failed."
+  },
+  "imported": {
+    "message": "Imported"
+  },
+  "lastBackup": {
+    "message": "Last backup"
+  },
+  "syncProvider": {
+    "message": "Provider"
+  },
+  "gistHint": {
+    "message": "Create a token with the “gist” scope at github.com/settings/tokens, then paste it here."
+  },
+  "gistToken": {
+    "message": "Personal access token (gist scope)"
+  },
+  "gistPrivate": {
+    "message": "private gist"
+  },
+  "gistFailed": {
+    "message": "Could not connect. Check the token has the gist scope."
+  },
+  "webdavFailed": {
+    "message": "Could not connect. Check the URL and credentials."
+  },
+  "autonomyRun": {
+    "message": "Autonomy for this run"
+  },
+  "autonomyAsk": {
+    "message": "Ask every action"
+  },
+  "autonomyAutoLow": {
+    "message": "Auto low-risk"
+  },
+  "autonomyScope": {
+    "message": "Autopilot (confirm risky)"
+  },
+  "autonomyShortAsk": {
+    "message": "Ask"
+  },
+  "autonomyShortAutoLow": {
+    "message": "Auto"
+  },
+  "autonomyShortScope": {
+    "message": "Autopilot"
+  },
+  "stepsWord": {
+    "message": "steps"
+  },
+  "tokensWord": {
+    "message": "tokens"
+  },
+  "mcpFailed": {
+    "message": "Could not add the server. Check the URL and grant access."
+  },
+  "addProviderFailed": {
+    "message": "Could not add. Check the URL and grant access."
+  },
+  "micNeedsKey": {
+    "message": "Add an OpenAI API key in Settings to enable voice"
+  },
+  "noticeNeedsKey": {
+    "message": "Add a provider API key in Settings to start chatting."
+  },
+  "noticeNeedsWebgpu": {
+    "message": "The in-browser model needs WebGPU, which this browser doesn’t expose. Add a cloud provider key in Settings, or enable WebGPU."
+  },
+  "openSettings": {
+    "message": "Open Settings"
+  },
+  "tabMemory": {
+    "message": "Memory"
+  },
+  "memViewKnows": {
+    "message": "Knowledge"
+  },
+  "memViewTasks": {
+    "message": "Tasks"
+  },
+  "memViewBlocked": {
+    "message": "Blocked"
+  },
+  "memPending": {
+    "message": "Waiting for your review"
+  },
+  "memAboutMe": {
+    "message": "What Inquiso knows about me"
+  },
+  "memSites": {
+    "message": "Website knowledge"
+  },
+  "memHistory": {
+    "message": "Superseded & outdated"
+  },
+  "memEmpty": {
+    "message": "Nothing learned yet. Memories appear here as Inquiso works for you."
+  },
+  "memConfirmed": {
+    "message": "confirmed by you"
+  },
+  "memInferred": {
+    "message": "inferred"
+  },
+  "memLocal": {
+    "message": "Stays on this device"
+  },
+  "memConfirm": {
+    "message": "Confirm"
+  },
+  "memEdit": {
+    "message": "Edit"
+  },
+  "memIncorrect": {
+    "message": "Mark incorrect"
+  },
+  "memForget": {
+    "message": "Forget"
+  },
+  "memBlocked": {
+    "message": "Blocked memory attempts"
+  },
+  "memNoBlocked": {
+    "message": "No blocked attempts."
+  },
+  "memDiscarded": {
+    "message": "Discarded"
+  },
+  "memQuarantined": {
+    "message": "Quarantined"
+  },
+  "memNoRuns": {
+    "message": "No recorded tasks yet."
+  },
+  "memUntitledRun": {
+    "message": "Untitled task"
+  },
+  "memRunActions": {
+    "message": "actions"
+  },
+  "memRunFailures": {
+    "message": "failures"
+  },
+  "memRunRecoveries": {
+    "message": "recoveries"
+  },
+  "memRunCalls": {
+    "message": "model calls"
+  },
+  "memRunTokens": {
+    "message": "tokens"
+  },
+  "memExport": {
+    "message": "Export memory"
+  },
+  "memDeleteAll": {
+    "message": "Delete all memory"
+  },
+  "memLocalNote": {
+    "message": "All memory is stored locally in your browser and never synced."
+  },
+  "memUsing": {
+    "message": "Using memory:"
+  },
+  "memAutoLearn": {
+    "message": "Learn automatically from completed tasks"
+  },
+  "memViewSkills": {
+    "message": "Workflows"
+  },
+  "memNoSkills": {
+    "message": "No learned workflows yet. Repeat a successful task to teach one."
+  },
+  "memTrust": {
+    "message": "Trust — run without re-verification"
+  },
+  "memRetire": {
+    "message": "Retire"
+  },
+  "memRepaired": {
+    "message": "repaired"
+  },
+  "policyTitle": {
+    "message": "Agent capability rules"
+  },
+  "policyEmpty": {
+    "message": "No standing rules. Sensitive actions (submitting, sending, deleting, purchasing) always ask, and nothing the agent remembers can grant itself permissions."
+  },
+  "policyRemove": {
+    "message": "Remove"
+  },
+  "pageNoAccess": {
+    "message": "Inquiso can’t read"
+  },
+  "pageGrantAccess": {
+    "message": "Grant access"
+  },
+  "memExportSkill": {
+    "message": "Export .md"
+  },
+  "memUsed": {
+    "message": "used"
+  }
+}

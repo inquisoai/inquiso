@@ -1,0 +1,7 @@
+# Default owners for everything in the repo. Update as the team grows.
+* @tr1dax
+
+# Security-sensitive areas warrant extra eyes.
+/src/core/auth/ @tr1dax
+/src/core/agent/ @tr1dax
+/docs/05-security.md @tr1dax

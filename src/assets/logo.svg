@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>Inquiso</title>
+  <rect width="128" height="128" rx="30" fill="#18181b"/>
+  <g transform="translate(16 16) scale(3)" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round">
+    <circle cx="14" cy="14" r="9"/>
+    <circle cx="14" cy="14" r="2.6" fill="#ffffff" stroke="none"/>
+    <path d="M20.4 20.4 27 27"/>
+  </g>
+</svg>

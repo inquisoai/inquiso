@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+.output/
+.wxt/
+*.zip
+
+# Env & secrets (never commit keys/tokens)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Test / coverage
+coverage/
+test-results/
+playwright-report/
+.playwright/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.log
+
+# Local dev browser preferences (per-machine)
+web-ext.config.ts
+.eval-out/
+.agents/
+skills-lock.json

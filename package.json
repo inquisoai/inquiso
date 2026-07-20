@@ -1,0 +1,97 @@
+{
+  "name": "inquiso",
+  "version": "0.0.0",
+  "description": "Open-source cross-browser AI sidebar and agent that chats with and acts on any web page.",
+  "license": "MIT",
+  "homepage": "https://inquisoai.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inquisoai/inquiso.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inquisoai/inquiso/issues"
+  },
+  "keywords": [
+    "browser-extension",
+    "chrome-extension",
+    "firefox",
+    "manifest-v3",
+    "ai",
+    "ai-agent",
+    "local-first",
+    "wxt"
+  ],
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.8.1",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build && wxt build -b firefox",
+    "zip": "wxt zip && wxt zip -b firefox",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
+    "typecheck": "wxt prepare && tsc --noEmit",
+    "lines": "node scripts/check-file-size.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "node scripts/serve-demo.mjs",
+    "evaluate:memory": "vitest run --config vitest.eval.config.ts && node scripts/eval-report.mjs",
+    "e2e": "playwright test",
+    "changeset": "changeset",
+    "prepare": "husky",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.93",
+    "@ai-sdk/google": "^3.0.88",
+    "@ai-sdk/mcp": "^2.0.8",
+    "@ai-sdk/openai": "^3.0.80",
+    "@ai-sdk/openai-compatible": "^2.0.57",
+    "@ai-sdk/react": "^4.0.23",
+    "@browser-ai/core": "^2.1.13",
+    "@browser-ai/web-llm": "2.1.8",
+    "@mozilla/readability": "^0.6.0",
+    "@tanstack/react-query": "^5.101.2",
+    "ai": "^6.0.219",
+    "localforage": "^1.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "turndown": "^7.2.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.2",
+    "@changesets/cli": "^2.27.11",
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@playwright/test": "^1.61.1",
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/turndown": "^5.0.5",
+    "@types/webextension-polyfill": "^0.12.1",
+    "@wxt-dev/auto-icons": "^1.1.1",
+    "@wxt-dev/module-react": "^1.1.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10",
+    "wxt": "^0.20.27"
+  },
+  "pnpm": {
+    "overrides": {
+      "@vitejs/plugin-react": "^4.3.4"
+    },
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild"
+    ]
+  }
+}

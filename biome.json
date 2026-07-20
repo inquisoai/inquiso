@@ -1,0 +1,45 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.2/schema.json",
+  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!**/.wxt", "!**/.output", "!**/dist", "!**/node_modules", "!**/.changeset"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "suspicious": {
+        "noExplicitAny": "error",
+        "noConsole": { "level": "error", "options": { "allow": ["log"] } }
+      },
+      "style": { "useImportType": "error", "noNonNullAssertion": "warn" },
+      "complexity": { "noExcessiveCognitiveComplexity": "warn" }
+    }
+  },
+  "javascript": {
+    "formatter": { "quoteStyle": "single", "semicolons": "asNeeded", "trailingCommas": "all" }
+  },
+  "css": { "parser": { "tailwindDirectives": true } },
+  "overrides": [
+    {
+      "includes": ["**/scripts/**", "**/tests/**"],
+      "linter": {
+        "rules": {
+          "suspicious": { "noConsole": { "level": "off", "options": { "allow": ["log"] } } }
+        }
+      }
+    },
+    {
+      "includes": ["**/src/shared/util/logger.ts"],
+      "linter": { "rules": { "suspicious": { "noConsole": "off" } } }
+    }
+  ]
+}

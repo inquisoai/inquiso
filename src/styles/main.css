@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Inquiso design tokens (Tailwind v4 @theme). Surfaces use light-dark() so
+ * every component adapts to the browser theme without dark: variants. */
+@theme {
+  /* Monochrome, ink-driven identity (the ChatGPT/Grok convention): emphasis
+   * comes from contrast, not hue. `brand` is near-black in light / near-white
+   * in dark, so text reads and the one filled control (send) is the sole
+   * high-contrast element. Filled buttons use `text-surface` as the inverse. */
+  --color-brand: light-dark(#18181b, #f4f4f5);
+  /* App background, raised surfaces (cards/menus/composer), and hover tint. */
+  --color-surface: light-dark(#ffffff, #17171a);
+  --color-surface-2: light-dark(#f3f3f6, #232329);
+  --color-surface-3: light-dark(#e9e9ee, #2e2e36);
+  /* Text: primary ink and dimmed secondary. */
+  --color-ink: light-dark(#1b1b1f, #ececf1);
+  --color-ink-dim: light-dark(#70707c, #9d9da8);
+  /* Hairline borders. */
+  --color-line: light-dark(#e3e3e9, #33333b);
+  /* Semantic status colors — the only non-monochrome accents. light-dark() so
+   * they adapt like every other token (fixed red-500s don't). */
+  --color-danger: light-dark(#dc2626, #f87171);
+  --color-warn: light-dark(#d97706, #fbbf24);
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  /* Sidebar rule: the panel itself never scrolls sideways, however narrow the
+   * Firefox/Chromium sidebar is. Wide content (code blocks, tables) scrolls
+   * inside its own overflow-x container instead. */
+  overflow-x: hidden;
+}
+
+/* Menus and popovers scale-fade in like native mobile sheets. */
+@keyframes menu-pop {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.menu-pop {
+  animation: menu-pop 0.12s ease-out;
+}
+
+/* Shimmering "Thinking…" label while the model reasons (ChatGPT/Grok style). */
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-ink-dim) 35%,
+    var(--color-ink) 50%,
+    var(--color-ink-dim) 65%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 1.6s linear infinite;
+}
