@@ -1,7 +1,7 @@
-# Default owners for everything in the repo. Update as the team grows.
-* @tr1dax
+# Default owners for everything in the repo.
+* @inquisoai/maintainers
 
 # Security-sensitive areas warrant extra eyes.
-/src/core/auth/ @tr1dax
-/src/core/agent/ @tr1dax
-/docs/05-security.md @tr1dax
+/src/core/auth/ @inquisoai/security @inquisoai/maintainers
+/src/core/agent/ @inquisoai/security @inquisoai/maintainers
+/docs/05-security.md @inquisoai/security @inquisoai/maintainers
