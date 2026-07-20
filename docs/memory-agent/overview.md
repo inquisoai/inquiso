@@ -92,6 +92,6 @@ failures (recovered) degrades and repairs the workflow back to 3 actions with 0 
 | Skill engine (learn, shadow, execute, degrade, repair) | `src/core/memory/skills/` |
 | Outcome verifier | `src/core/agent/verify/` |
 | Policy engine | `src/core/policy/` |
-| Qwen provider + fast-model routing | `src/core/providers/defs/qwen.ts`, `extraction.ts` |
+| Providers + fast-model routing | `src/core/providers/`, `extraction.ts` |
 | Memory Center UI | `src/ui/features/memory/` |
-| Demo portals / evaluation | `demo/portals/`, `tests/evaluation/` |
+| Evaluation harness | `tests/evaluation/` |

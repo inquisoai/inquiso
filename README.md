@@ -36,17 +36,14 @@ Beyond completing tasks, Inquiso **remembers how** they were completed — local
   side effects.
 - **The Memory Center** — inspect, edit, confirm, forget, export, or delete everything,
   including blocked write attempts and per-run measured metrics.
-- **Qwen Cloud inside** — first-class [DashScope](docs/deployment/alibaba-cloud.md) provider:
-  qwen-plus/qwen3-max plan, qwen-flash extracts memories, text-embedding-v4 powers retrieval.
 
-Start at [docs/memory-agent/overview.md](docs/memory-agent/overview.md); measure it yourself
-with `pnpm evaluate:memory` ([results](docs/memory-agent/evaluation-results.md)); see the
-3-minute [demo script](docs/demo-script.md) with the bundled portals (`pnpm demo`).
+Start at [docs/memory-agent/overview.md](docs/memory-agent/overview.md); the measured results
+live in [evaluation-results.md](docs/memory-agent/evaluation-results.md).
 
 ## Why Inquiso
 
 - **Bring your own model.** Use a free local model (Chrome Built-in AI / Gemini Nano), or
-  bring your own API key for OpenAI, Anthropic, or Google. You stay in control of cost and data.
+  bring your own API key for OpenAI, Anthropic, Google, Qwen, or Kimi. You stay in control of cost and data.
 - **Transparent agent.** Every reasoning step and every action the agent takes is shown to
   you. Sensitive actions require your confirmation.
 - **Fast.** Built on WXT + Vite + React with aggressive, memory-aware caching so the sidebar
@@ -110,8 +107,6 @@ Read the design before contributing code:
 | [Memory security](docs/memory-agent/security.md) | Poisoning defence, policy engine |
 | [Browser skills](docs/memory-agent/browser-skills.md) | Learn → shadow → execute → degrade → repair |
 | [Evaluation](docs/memory-agent/evaluation.md) | Harness design + [measured results](docs/memory-agent/evaluation-results.md) |
-| [Demo script](docs/demo-script.md) | The 3-minute walkthrough (`pnpm demo`) |
-| [Alibaba Cloud deployment](docs/deployment/alibaba-cloud.md) | Qwen setup + OSS portal hosting |
 
 ## License
 

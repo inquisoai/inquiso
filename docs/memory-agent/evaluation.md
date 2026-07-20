@@ -35,8 +35,7 @@ tests missed.
 
 Real runs record real metrics in the ledger (`RunMeta`: actions, failures, recoveries, model
 calls, tokens from the provider) and the Memory Center's **Tasks** view displays them per
-run — so the first-vs-repeated comparison shown in a live demo
-([docs/demo-script.md](../demo-script.md)) is measured, not scripted.
+run — so the first-vs-repeated comparison shown in a live session is measured, not scripted.
 
 ## Unit coverage (Vitest, `pnpm test`)
 

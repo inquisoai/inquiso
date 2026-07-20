@@ -7,12 +7,12 @@ are **measured** by the harness in `tests/evaluation/` — nothing here is hand-
 
 The harness runs the **real memory subsystem** (event ledger, write pipeline, episode/
 reflection learning, hybrid retrieval, skill lifecycle: shadow → trust → degrade → repair)
-against a deterministic simulator of the demo invoice portal (`demo/portals`), driven by a
+against a deterministic simulator of an invoice portal, driven by a
 **scripted planner of constant competence**. The planner follows a fixed policy (use an
 offered workflow → else a remembered site fact → else explore in fixed order), so differences
 between configurations measure what the memory system delivers to the planner — not model
 skill. It does not measure LLM behaviour, tokens, or wall-clock latency; those require the
-end-to-end browser demo (docs/demo-script.md). "Planning calls" counts the scripted planner's
+end-to-end browser session. "Planning calls" counts the scripted planner's
 plan/observe/replan rounds — the quantity a real deployment pays model calls for.
 
 ## Repeated-task improvement (task: "download the newest invoice from the billing portal (portal v1)")

@@ -11,8 +11,8 @@ hard-filtered, and observable (`src/core/memory/retrieval/`).
 2. **Hybrid scoring** (`retrieval/score.ts`): `2·lexical + 1.5·semantic + 0.5·confidence +
    0.5·usefulness + 0.3·recency + userConfirmed − misleading − page-supplied`. Deterministic
    given its inputs — the weights are the observability story.
-   - Semantic similarity (`retrieval/embed.ts`) uses the active provider's embeddings (Qwen
-     `text-embedding-v4`, OpenAI, Google) with the shared vector cache; without an embedder
+   - Semantic similarity (`retrieval/embed.ts`) uses the active provider's embeddings (OpenAI,
+     Google, or Qwen `text-embedding-v4`) with the shared vector cache; without an embedder
      retrieval degrades to lexical.
    - **Relevance gate**: facts/episodes/reflections need an actual lexical/semantic
      connection to the task — nothing rides along just to fill a budget. Preferences are
