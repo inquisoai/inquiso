@@ -4,6 +4,7 @@ import { anthropic } from './defs/anthropic'
 import { chromeAi } from './defs/chrome-ai'
 import { gatewayDefs } from './defs/gateways'
 import { google } from './defs/google'
+import { kimi } from './defs/kimi'
 import { openai } from './defs/openai'
 import { qwen } from './defs/qwen'
 import { webLlm } from './defs/web-llm'
@@ -20,6 +21,7 @@ export const providerDefs: ProviderDef[] = [
   anthropic,
   google,
   qwen,
+  kimi,
   ...gatewayDefs,
 ].filter((d) => !(isFirefox && d.chromiumOnly))
 

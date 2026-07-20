@@ -58,6 +58,7 @@ describe('registry with gateways', () => {
       'anthropic',
       'google',
       'qwen',
+      'kimi',
       'openrouter',
       'vercel-gateway',
     ])
@@ -70,6 +71,13 @@ describe('registry with gateways', () => {
     expect(def?.fastModel).toBe('qwen-flash')
     expect(def?.embeddingModel).toBe('text-embedding-v4')
     expect(def?.models).toContain('qwen-plus')
+  })
+
+  it('exposes Kimi (Moonshot AI) as an OpenAI-compatible cloud provider', () => {
+    const def = getDef('kimi')
+    expect(def?.baseURL).toContain('api.moonshot.ai')
+    expect(def?.toolCalls).toBe(true)
+    expect(def?.models).toContain('kimi-latest')
   })
 
   it('offers multiple in-browser WebLLM models with a WebGPU preflight', () => {
