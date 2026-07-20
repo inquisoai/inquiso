@@ -50,7 +50,7 @@
     "@ai-sdk/mcp": "^2.0.8",
     "@ai-sdk/openai": "^3.0.80",
     "@ai-sdk/openai-compatible": "^2.0.57",
-    "@ai-sdk/react": "^4.0.23",
+    "@ai-sdk/react": "^4.0.34",
     "@browser-ai/core": "^2.1.13",
     "@browser-ai/web-llm": "2.1.8",
     "@mozilla/readability": "^0.6.0",
